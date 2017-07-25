@@ -20,7 +20,7 @@ pipeline {
         }
         stage ('Deployment Stage') {
             steps {
-                mail to: team@example.com, subject: 'The Pipeline failed :('
+                mail to: 'team@example.com', subject: 'The Pipeline failed :('
                 echo "Job Name: ${env.JOB_NAME}"
                 echo 'deploy stage'
             }
