@@ -6,12 +6,14 @@ pipeline {
     stages {
         stage ('Compile Stage') {
              steps {
+              echo "params greting: ${params.Greeting}"
                  echo "Build ID: ${env.BUILD_ID}"
                  echo 'Hello compile stage'
             }
         }
         stage ('Testing Stage') {
             steps {
+             echo "params greting: ${params.chooseone}"
                 echo "Jenkins URL: ${env.JENKINS_URL}"
                 echo 'hello testing stage'
             }
