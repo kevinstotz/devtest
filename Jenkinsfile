@@ -13,7 +13,7 @@ pipeline {
         }
         stage ('Testing Stage') {
             steps {
-             echo "params greting: ${params.chooseone}"
+             echo "params Choose one: ${params.'choose one'}"
                 echo "Jenkins URL: ${env.JENKINS_URL}"
                 echo 'hello testing stage'
             }
